@@ -35,12 +35,14 @@ function convert(num) {
 //Testing out Code
 //My main to loop through the given array converting each number to the phoentic equivalent
 
-function phoneticEquivalent() {
-  let arrayTest = [3, 25, 209, 10, 300, 5];
-  
-  for (let i = 0; i < arrayTest.length; i++) {
-    console.log(convert(arrayTest[i]));
+function phoneticEquivalent(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(convert(arr[i]));
   }
 }
+let arrayTest1 = [3, 25, 209];
+let arrayTest2 = [10, 300, 5];
 
-phoneticEquivalent();
+phoneticEquivalent(arrayTest1);
+console.log('*****Next Array*****');
+phoneticEquivalent(arrayTest2);
