@@ -14,12 +14,7 @@ function hundreds(num) {
 
 //Functions to convert tens
 function tens(num) {
-  if (num >= 10 && num < 20){
     return onesArray[Math.floor(num / 10)] + onesArray[num % 10];  
-  }
-  else {
-    return onesArray[Math.floor(num / 10)] + onesArray[num % 10];
-  }
 }
 
 //Function to convert any number
@@ -40,7 +35,7 @@ function phoneticEquivalent(arr) {
     console.log(convert(arr[i]));
   }
 }
-let arrayTest1 = [3, 25, 209];
+let arrayTest1 = [3, 55, 209];
 let arrayTest2 = [10, 300, 5];
 
 phoneticEquivalent(arrayTest1);
