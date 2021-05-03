@@ -30,14 +30,24 @@ function convert(num) {
 //Testing out Code
 //My main to loop through the given array converting each number to the phoentic equivalent
 
-function phoneticEquivalent(arr) {
+// function phoneticEquivalent(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     console.log(convert(arr[i]));
+//   }
+// }
+// let arrayTest1 = [3, 55, 209];
+// let arrayTest2 = [10, 300, 5];
+
+// phoneticEquivalent(arrayTest1);
+// console.log('*****Next Array*****');
+// phoneticEquivalent(arrayTest2);
+
+//Modified to make script run in node via Command Line Interface
+function main(arr) {
   for (let i = 0; i < arr.length; i++) {
     console.log(convert(arr[i]));
   }
 }
-let arrayTest1 = [3, 55, 209];
-let arrayTest2 = [10, 300, 5];
-
-phoneticEquivalent(arrayTest1);
-console.log('*****Next Array*****');
-phoneticEquivalent(arrayTest2);
+//To Run in node.js
+let arrayTest = process.argv.slice(2);
+console.log(main(arrayTest));
